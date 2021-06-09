@@ -12,9 +12,11 @@
       <!--custom css-->
       <link href="custom/css/custom-css.css" rel="stylesheet">
       <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+      <!------- google font ---->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro">
    </head>
    <body>
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <nav class="navbar navbar-expand-md  fixed-top " id="navbar">
          <a class="navbar-brand" href="#">LinkTable</a>
          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
          <span class="navbar-toggler-icon"></span>
@@ -22,10 +24,10 @@
          <div class="collapse navbar-collapse navbar-right float-right" id="navbarCollapse">
             <ul class="navbar-nav mr-auto">
                <li class="nav-item active">
-                  <a class="nav-link" href="#homee">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link" href="#about_">About</a>
+                  <a class="nav-link" href="#sub-head">About</a>
                </li>
                <li class="nav-item">
                   <a class="nav-link" href="#timetable">Time Table</a>
@@ -38,9 +40,9 @@
       </nav>
 <!--nav complete-->
 <!--banner-start-->
-      <section class="banner yellowClr pb-5 hidee" id="homee">
-         <div class="container pt-40">
-            <h1 class="ml-2 mt-5 "><b>LinkTable</b> - <span class="sub-lable">Quick Launcher</span></h1>
+      <section class="banner yellowClr pb-5 hidee h-100" id="homee">
+         <div class="container pt-40 pb-5">
+            <h1 class="ml-2 mt-5 text-white mb-5"><span class="sub-lable">Quick Launcher</span></h1>
             <div class="row p-4 shadow rounded m-1">
                <div class="col-md-4 bg-gry p-3">
 <!--Automatic Quick Class Link Launcher Start-->
@@ -68,7 +70,7 @@
                         <h5>Now:</h5><h3><b><i>Mobile App Development</i></b></h3>
                         <a href="https://meet.google.com/lookup/d2h3wj4o3e" class="btn yellowClrAlone rounded mt-3" target="_blank shake">Join Now..!</a>
                      </div>
-                     <div class="col p-3 hidee" id="lunch_">
+                     <div class="col p-3 hidee" id="lunch_time">
                         <h3>Lunch Time</h3>
                         <p>Go and eat some healthy food now..!</p>
                      </div>
@@ -134,7 +136,7 @@
                      <div class="col p-3 hidee" id="__mad_">
                         <h5>Next: </h5><h3><b><i>Mobile App Development</i></b></h3>
                      </div>
-                     <div class="col p-3 hidee" id="__lunch_">
+                     <div class="col p-3 hidee" id="lunch_nxt">
                         <h5>Next: </h5><h3><b><i>Lunch Time</i></b></h3>
                      </div>
                      <div class="col p-3 hidee" id="__ip-l_">
@@ -168,11 +170,11 @@
          </div>
       </section>
       <!--banner-end-->
-      <section id="sub-head" class="">
+      <section id="sub-head" class="bg-light">
          <div class="container">
             <div class="row pb-5 pt-40">
                <div class="col-md-6 p-5 mt-50">
-                  <h1 class="ml-2 mt-5"><b>LinkTable</b> - <span class="sub-lable">About</span></h1>
+                  <h1 class="ml-2 mt-5">About <span class="sub-lable">Us</span></h1>
 
                   <p class="text-justify mt-3">MCA students can go their respective class using "LinkTable".  Here all subject links are available.  They can download all PDFs for all coresponding subjects.</p>
                   <div class="row">
@@ -288,7 +290,7 @@
       <!--Resource divition here-->
       <section class="resource bg-blu" id="resource">
          <div class="container mt-30 pb-5 p-5">
-            <h2 class="mb-5  text-center clr-wh">Resource</h2>
+            <h2 class="mb-5 mt-3  text-center clr-wh">Resource</h2>
             <div class="row mb-3">
                <div class="col-sm-6">
                   <div class="card shadow mb-3">
@@ -930,11 +932,11 @@ if(hr>=8 && hr<15)
          else if(tmin>=720 && tmin<=764)
          {
             document.getElementById("mad_").style.display='block';
-            document.getElementById("__lunch_").style.display='block';  
+            document.getElementById("lunch_nxt").style.display='block';  
          }
          else if(tmin>=765 && tmin<=839)
          {
-            document.getElementById("lunch_").style.display='block'; 
+            document.getElementById("lunch_time").style.display='block'; 
             document.getElementById("__ip-l_").style.display='block';  
          }
          else if(tmin>=840 && tmin<=899)
@@ -974,11 +976,11 @@ if(hr>=8 && hr<15)
          else if(tmin>=720 && tmin<=764)
          {
             document.getElementById("ip_").style.display='block'; 
-            document.getElementById("__lunchh").style.display='block'; 
+            document.getElementById("lunch_nxt").style.display='block'; 
          }
          else if(tmin>=765 && tmin<=839)
          {
-            document.getElementById("lunch_").style.display='block';
+            document.getElementById("lunch_time").style.display='block';
             document.getElementById("__ai-ml-l_").style.display='block';
          }
          else if(tmin>=840 && tmin<=899)
@@ -1018,11 +1020,11 @@ if(hr>=8 && hr<15)
          else if(tmin>=720 && tmin<=764)
          {
             document.getElementById("pt_").style.display='block';
-            document.getElementById("__lunchh").style.display='block';  
+            document.getElementById("lunch_nxt").style.display='block';  
          }
          else if(tmin>=765 && tmin<=839)
          {
-            document.getElementById("lunch_").style.display='block';
+            document.getElementById("lunch_time").style.display='block';
             document.getElementById("__mad-l_").style.display='block';
          }
          else if(tmin>=840 && tmin<=899)
@@ -1062,11 +1064,11 @@ if(hr>=8 && hr<15)
          else if(tmin>=720 && tmin<=764)
          {
             document.getElementById("ai-ml_").style.display='block';
-            document.getElementById("__lunchh").style.display='block'; 
+            document.getElementById("lunch_nxt").style.display='block'; 
          }
          else if(tmin>=765 && tmin<=839)
          {
-            document.getElementById("lunch_").style.display='block';
+            document.getElementById("lunch_time").style.display='block';
             document.getElementById("__free_").style.display='block'; 
          }
          else if(tmin>=840 && tmin<=899)
@@ -1106,11 +1108,11 @@ if(hr>=8 && hr<15)
          else if(tmin>=720 && tmin<=764)
          {
             document.getElementById("pt_").style.display='block'; 
-            document.getElementById("__lunchh").style.display='block'; 
+            document.getElementById("lunch_nxt").style.display='block'; 
          }
          else if(tmin>=765 && tmin<=839)
          {
-            document.getElementById("lunch_").style.display='block';
+            document.getElementById("lunch_time").style.display='block';
             document.getElementById("__cse-l_").style.display='block'; 
          }
          else if(tmin>=840 && tmin<=899)
@@ -1150,11 +1152,11 @@ if(hr>=8 && hr<15)
          else if(tmin>=720 && tmin<=764)
          {
             document.getElementById("free_").style.display='block'; 
-            document.getElementById("__lunchh").style.display='block'; 
+            document.getElementById("lunch_nxt").style.display='block'; 
          }
          else if(tmin>=765 && tmin<=839)
          {
-            document.getElementById("lunch_").style.display='block';
+            document.getElementById("lunch_time").style.display='block';
             document.getElementById("__free").style.display='block';
          }
          else if(tmin>=840 && tmin<=899)
@@ -1175,8 +1177,8 @@ else
 
 
 const FULL_DASH_ARRAY = 283;
-const WARNING_THRESHOLD = 10;
-const ALERT_THRESHOLD = 5;
+const WARNING_THRESHOLD = 30;
+const ALERT_THRESHOLD = 20;
 
 const COLOR_CODES = {
   info: {
@@ -1289,5 +1291,20 @@ function setCircleDasharray() {
 }
    </script>
    <!--for timer end-->
+<!-------------- NavBar ---->
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
    </body>
 </html>
