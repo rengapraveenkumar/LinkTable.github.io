@@ -1,0 +1,141 @@
+.clr-wh
+{
+	color: #fff;
+}
+.b
+{
+	font-weight: bold;
+}
+.i
+{
+	font-style: italic;
+}
+.b-i
+{
+	font-weight: bold;
+	font-style: italic;
+}
+html {
+  scroll-behavior: smooth;
+}
+.bg-blu
+{
+	background-color: #008F95;
+}
+.hidee
+{
+	display: none;
+}
+.yellowClrAlone
+{
+	background-color: #ffce00;	
+}
+.yellowClr
+{
+	background-color: #ffce00;
+	margin-top: 50px;
+}
+.bg-gry
+{
+	background-color: #262228;
+	color: #fff;
+}
+.margin-mr
+{
+	margin-top: 40px;
+}
+.resource-css
+{
+	margin: 20px;
+	padding: 20px;
+	background-color: #0375B4;
+	color: #fff;
+}
+.rightt
+{
+	float: right;
+}
+.footerr
+{
+	background-color: #262228;
+	color: #fff;
+	padding: 30px 30px 50px 30px;
+	text-align: center;
+}
+.r-bg
+{
+	background-color: #c5f2f6;
+}
+.t-align-center
+{
+	text-align: center;
+}
+.c-float
+{
+	float: right;
+}
+.sec-p
+{
+	padding-top: 15px;
+}
+.pt-40
+{
+	padding-top: 40px;
+}
+
+
+/*for timer start*/
+.base-timer {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  justify-content: center;
+}
+
+.base-timer__svg {
+  transform: scaleX(-1);
+}
+
+.base-timer__circle {
+  fill: none;
+  stroke: none;
+}
+
+.base-timer__path-elapsed {
+  stroke-width: 7px;
+  stroke: grey;
+}
+
+.base-timer__path-remaining {
+  stroke-width: 7px;
+  stroke-linecap: round;
+  transform: rotate(90deg);
+  transform-origin: center;
+  transition: 1s linear all;
+  fill-rule: nonzero;
+  stroke: currentColor;
+}
+
+.base-timer__path-remaining.green {
+  color: rgb(65, 184, 131);
+}
+
+.base-timer__path-remaining.orange {
+  color: orange;
+}
+
+.base-timer__path-remaining.red {
+  color: red;
+}
+
+.base-timer__label {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+}
+/*for timer end*/
